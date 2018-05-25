@@ -96,14 +96,21 @@ ul {
 .container {
   max-width: 1500px;
   margin: auto;
+  margin-top: 40px;
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(3, minmax(470px, 1fr)) repeat(2, minmax(50%, 1fr));
+  grid-template-columns: repeat(6, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(398px, 1fr));
 }
 .bundle-item {
   position: relative;
+  font-weight: bold;
+  grid-column: span 2;
+  color: rgba(255, 255, 255, 0.8);
   box-shadow: 2px 2px 5px rgba(0,0,0,.45);
+}
+.bundle-item.half {
+  grid-column: span 3;
 }
 .bundle-image {
   max-height: 270px;
@@ -114,10 +121,13 @@ ul {
   width: 100%;
   z-index: 0;
 }
-.bundle-emblem {
-  height: 100%;
+.bundle-overlay {
   background-color: rgba(0,0,0,.5);
+  height: 100%;
   position: relative;
+}
+.bundle-emblem {
+  padding: 20px;
 }
 .bundle-emblem img:first-of-type {
   width: 20%;
@@ -129,15 +139,19 @@ ul {
   margin-left: 20px;
 }
 .bundle-title {
+  color: inherit;
   background-color: #3b3e48;
   height: 4em;
+  padding: 0 12px;
   align-items: center;
+  justify-content: space-between;
 }
 .bundle-title p {
   margin: 0;
 }
 .bundle-timeleft {
-  height: 4em;
+  color: inherit;
+  padding: 12px;
   align-items: center;
   justify-content: space-between;
   background-color: #282c34;
