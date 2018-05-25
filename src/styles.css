@@ -104,16 +104,14 @@ ul {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(402px, 1fr));
   margin-bottom: 30px;
 }
 /* Two Item Grid */
 .grid.two-item {
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(549px, 1fr));
 }
 .grid.four-item {
-  grid-template: repeat(auto-fill, minmax(325px, 1fr)) / repeat(4, 1fr) ;
+  grid-template-columns: repeat(4, 1fr);
 }
 /* Grid Item */
 .bundle-item {
@@ -124,26 +122,20 @@ ul {
   box-shadow: 2px 2px 5px rgba(0,0,0,.45);
 }
 .bundle-image {
-  height: 100%;
-}
-.bundle-image.large {
-  max-height: 421px;
-}
-.bundle-image.small {
-  max-height: 275px;
-}
-.bundle-image.x-small {
-  max-height: 197px;
+  height: auto;
+  position: relative;
+  margin-bottom: -5px;
 }
 .bundle-image img:first-of-type {
-  position: absolute;
   width: 100%;
   z-index: 0;
 }
 .bundle-overlay {
   background-color: rgba(0,0,0,.5);
   height: 100%;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 .bundle-emblem {
   padding: 20px;
@@ -214,6 +206,7 @@ ul {
 /* Footer */
 footer {
   background-color: #3B3E48;
+  color: #a1a7b2;
 }
 .inner-footer {
   max-width: 1500px;
@@ -237,6 +230,19 @@ footer {
 .footer-item {
   margin: 0 50px;
 }
+.footer-item li {
+  margin: 20px 0;
+}
+.footer-item li a {
+  color: inherit;
+  text-decoration: none;
+}
 .footer-item:first-of-type {
   margin: 0 50px 50px 0;
+}
+
+@media screen and (max-width: 1024) {
+  .nav-search {
+    display: none;
+  }
 }
