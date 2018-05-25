@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'JS Template',
+      title: 'Humble Bundle Clone',
       template: './src/index.html',
       inject: 'body'
     })
