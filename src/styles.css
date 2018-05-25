@@ -97,10 +97,17 @@ ul {
   max-width: 1500px;
   margin: auto;
   margin-top: 40px;
+
+}
+.grid {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(6, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(398px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(402px, 1fr));
+  margin-bottom: 30px;
+}
+.grid.two-item {
+  grid-template-rows: repeat(auto-fill, minmax(573px, 1fr));
 }
 .bundle-item {
   position: relative;
@@ -113,7 +120,7 @@ ul {
   grid-column: span 3;
 }
 .bundle-image {
-  max-height: 270px;
+  max-height: 275px;
   height: 100%;
 }
 .bundle-image img:first-of-type {
