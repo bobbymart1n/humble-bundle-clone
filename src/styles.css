@@ -112,6 +112,9 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(549px, 1fr));
 }
+.grid.four-item {
+  grid-template: repeat(auto-fill, minmax(325px, 1fr)) / repeat(4, 1fr) ;
+}
 /* Grid Item */
 .bundle-item {
   position: relative;
@@ -123,11 +126,14 @@ ul {
 .bundle-image {
   height: 100%;
 }
+.bundle-image.large {
+  max-height: 421px;
+}
 .bundle-image.small {
   max-height: 275px;
 }
-.bundle-image.large {
-  max-height: 421px;
+.bundle-image.x-small {
+  max-height: 197px;
 }
 .bundle-image img:first-of-type {
   position: absolute;
@@ -204,4 +210,11 @@ ul {
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
+}
+footer {
+  background-color: #3B3E48;
+}
+.inner-footer {
+  max-width: 1500px;
+  margin: auto;
 }
