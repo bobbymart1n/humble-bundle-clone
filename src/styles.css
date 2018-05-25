@@ -90,3 +90,45 @@ ul {
   border-radius: 0 4px 4px 0;
   border-left: 0;
 }
+.container {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, minmax(470px, 1fr)) repeat(2, minmax(50%, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+}
+.bundle-item {
+  position: relative;
+}
+.bundle-image img:first-of-type {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.bundle-emblem {
+  display: flex;
+  align-items: center;
+}
+.bundle-emblem img:first-of-type {
+  width: 20%;
+  position: relative;
+}
+.bundle-emblem img:last-of-type {
+  width: 40%;
+  position: relative;
+  margin-left: 20px;
+}
+.bundle-timeleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bundle-timeleft .days-left {
+  border-radius: 1.75em;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  border: 2px solid rgba(141,141,141,0.6);
+  background-color: rgba(10,10,10,0.35);
+}
