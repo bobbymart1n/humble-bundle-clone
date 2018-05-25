@@ -25,6 +25,7 @@ ul {
 /* Nav Inner Container */
 .inner-nav {
   width: 100%;
+  padding: 0 15px;
   max-width: 1500px;
   color: #a1a7b2;
   margin: auto;
@@ -98,6 +99,7 @@ ul {
   max-width: 1500px;
   margin: auto;
   margin-top: 40px;
+  padding: 0 15px;
 }
 /* Base Grid Styles */
 .grid {
@@ -210,11 +212,12 @@ footer {
 }
 .inner-footer {
   max-width: 1500px;
+  padding: 0 15px;
   margin: auto;
   flex-flow: row wrap;
 }
 .inner-footer .logo {
-  padding: 40px 40px 40px 0;
+  padding: 40px 0 40px 0;
   flex: 100% 1 0;
 }
 .inner-footer .logo img {
