@@ -182,7 +182,7 @@ ul {
   border: 2px solid rgba(141,141,141,0.6);
   background-color: rgba(10,10,10,0.35);
 }
-/* Bundle Item White */
+/* Grid Item White */
 .bundle-item.white .bundle-title, .bundle-timeleft {
   color: #494f5c;
 }
