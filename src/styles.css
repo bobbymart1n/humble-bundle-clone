@@ -93,12 +93,13 @@ ul {
   border-radius: 0 4px 4px 0;
   border-left: 0;
 }
+/* Main Container */
 .container {
   max-width: 1500px;
   margin: auto;
   margin-top: 40px;
-
 }
+/* Base Grid Styles */
 .grid {
   display: grid;
   grid-gap: 30px;
@@ -106,10 +107,12 @@ ul {
   grid-template-rows: repeat(auto-fill, minmax(402px, 1fr));
   margin-bottom: 30px;
 }
+/* Two Item Grid */
 .grid.two-item {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(549px, 1fr));
 }
+/* Grid Item */
 .bundle-item {
   position: relative;
   font-weight: bold;
@@ -178,4 +181,27 @@ ul {
   font-size: 0.85em;
   border: 2px solid rgba(141,141,141,0.6);
   background-color: rgba(10,10,10,0.35);
+}
+/* Bundle Item White */
+.bundle-item.white .bundle-title, .bundle-timeleft {
+  color: #494f5c;
+}
+.bundle-item.white .bundle-title {
+  background-color: white;
+}
+.bundle-item.white .bundle-timeleft {
+  background-color: #f7f7f7;
+}
+.bundle-item.white .bundle-timeleft .timeleft-info i {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.bundle-item.white .bundle-timeleft .timeleft-info .small-icon img {
+  width: 20px;
+}
+.bundle-item.white .bundle-timeleft .days-left {
+  border: 1px solid #494f5c;
+  border-radius: 4px;
+  background-color: transparent;
+  color: inherit;
 }
