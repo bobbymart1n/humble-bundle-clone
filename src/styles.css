@@ -102,23 +102,20 @@ ul {
 .grid {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(402px, 1fr));
   margin-bottom: 30px;
 }
 .grid.two-item {
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(549px, 1fr));
 }
 .bundle-item {
   position: relative;
   font-weight: bold;
   text-transform: uppercase;
-  grid-column: span 2;
   color: rgba(255, 255, 255, 0.8);
   box-shadow: 2px 2px 5px rgba(0,0,0,.45);
-}
-.bundle-item.half {
-  grid-column: span 3;
 }
 .bundle-image {
   height: 100%;
