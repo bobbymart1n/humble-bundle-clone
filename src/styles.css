@@ -227,6 +227,13 @@ footer {
 .inner-footer .logo img {
   width: 100px;
 }
+.footer-left {
+  flex: 3;
+}
+.footer-right {
+  flex: 2;
+  text-align: right;
+}
 .footer-item {
   margin: 0 50px;
 }
