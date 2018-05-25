@@ -9,6 +9,7 @@ This is a UI solo project that represents the past weeks work.
 | My Examples | Humble Bundles Site |
 |-------------|:-------------------:|
 |             | ![](src/images/humble-landing.png)|
+|             |![](src/images/humble-scrolled.png)|
 
 # Setup Requirements
 * Clone this repository
