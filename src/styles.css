@@ -43,7 +43,7 @@ ul {
 .inner-nav ul li:nth-of-type(2)  {
   margin-left: 0;
 }
-.inner-nav .logo img {
+.inner-nav .logo img, .inner-footer .logo img {
   width: 50%;
 }
 /* Nav Search Bar */
@@ -211,10 +211,25 @@ ul {
   background-color: transparent;
   color: inherit;
 }
+/* Footer */
 footer {
   background-color: #3B3E48;
 }
 .inner-footer {
   max-width: 1500px;
   margin: auto;
+  flex-flow: row wrap;
+}
+.inner-footer .logo {
+  padding: 40px 40px 40px 0;
+  flex: 100% 1 0;
+}
+.inner-footer .logo img {
+  width: 100px;
+}
+.footer-item {
+  margin: 0 50px;
+}
+.footer-item:first-of-type {
+  margin: 0 50px 50px 0;
 }
