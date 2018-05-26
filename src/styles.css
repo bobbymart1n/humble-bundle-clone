@@ -259,9 +259,22 @@ footer {
 }
 @media screen and (max-width: 414px) {
   .bundle-item {
-    grid-column: span 4;
+    grid-column: span 4 !important;
   }
   .inner-nav {
     display: none;
+  }
+  .inner-footer {
+    flex-flow: column;
+  }
+  .footer-left {
+    flex-flow: row wrap;
+  }
+  .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-item {
+    margin: 0 10px;
   }
 }
