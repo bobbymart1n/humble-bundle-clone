@@ -29,7 +29,13 @@ ul {
   max-width: 1500px;
   color: #a1a7b2;
   margin: auto;
-  display: flex;
+  align-items: center;
+}
+.mobile-nav {
+  display: none;
+  color: inherit;
+}
+.nav-wrapper {
   align-items: center;
   justify-content: space-between;
 }
@@ -252,7 +258,13 @@ footer {
     grid-column: span 2;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
+  .mobile-nav {
+    display: flex;
+  }
+  .nav-wrapper {
+    display: none;
+  }
   .grid.three-item .bundle-item {
     grid-column: span 4;
   }
