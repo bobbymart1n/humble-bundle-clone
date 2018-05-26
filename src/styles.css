@@ -244,8 +244,24 @@ footer {
   margin: 0 50px 50px 0;
 }
 
-@media screen and (max-width: 1024) {
-  .nav-search {
+@media screen and (max-width: 1024px) {
+  .inner-nav .nav-search {
+    display: none;
+  }
+  .grid.four-item .bundle-item {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid.three-item .bundle-item {
+    grid-column: span 4;
+  }
+}
+@media screen and (max-width: 414px) {
+  .bundle-item {
+    grid-column: span 4;
+  }
+  .inner-nav {
     display: none;
   }
 }
