@@ -39,6 +39,11 @@ ul {
 .mobile-nav {
   display: none;
   color: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav img {
+  width: 25%;
 }
 .nav-wrapper {
   align-items: center;
@@ -266,6 +271,7 @@ footer {
 @media screen and (max-width: 980px) {
   .mobile-nav {
     display: flex;
+    font-size: 30px;
   }
   .nav-wrapper {
     display: none;
@@ -278,7 +284,7 @@ footer {
   .bundle-item {
     grid-column: span 4 !important;
   }
-  .inner-nav {
+  .nav-wrapper {
     display: none;
   }
   .inner-footer {
